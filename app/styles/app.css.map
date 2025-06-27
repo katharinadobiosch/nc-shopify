@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "sourceRoot": "",
+    "sources": [
+        "../components/Header/header.scss",
+        "../components/Footer/footer.scss",
+        "../components/Intro/intro.scss"
+    ],
+    "names": [],
+    "mappings": "AAAA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAIA;EADF;IAEI;;;;AAIJ;EACE;EACA;EACA;;;AAGF;EACE;EACA;;AACA;EAHF;IAII;IACA;IACA;;;;AAIJ;EACE;;;AAGF;EACE;EACA;EACA;EACA;;;AAGF;EACE;;;AC9CF;EACI;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;;;ACfJ;EACE;EACA;EAAQ;EAAS;EAAa;EAC9B;EACA;EACA;EACA;EACA;;;AAIA;EACE;EACA;;;AAGF;EACE;IACE;IACA;;EAEF;IACE;IACA",
+    "file": "app.css"
+}

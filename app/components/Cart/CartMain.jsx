@@ -1,8 +1,8 @@
 import {useOptimisticCart} from '@shopify/hydrogen';
 import {Link} from 'react-router';
-import {useAside} from '~/components/Aside';
-import {CartLineItem} from '~/components/CartLineItem';
-import {CartSummary} from './CartSummary';
+import {useAside} from '~/components/Aside/Aside';
+import {CartLineItem} from '~/components/Cart/CartLineItem';
+import {CartSummary} from '~/components/Cart/CartSummary';
 
 /**
  * The main cart component that displays the cart items and summary.

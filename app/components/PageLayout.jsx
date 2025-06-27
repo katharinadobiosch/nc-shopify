@@ -1,14 +1,14 @@
 import {Await, Link} from 'react-router';
 import {Suspense, useId} from 'react';
-import {Aside} from '~/components/Aside';
-import {Footer} from '~/components/Footer';
-import {Header, HeaderMenu} from '~/components/Header';
-import {CartMain} from '~/components/CartMain';
+import {Aside} from './Aside/Aside';
+import {Footer} from './Footer/Footer';
+import {Header, HeaderMenu} from './Header/Header';
+import {CartMain} from './Cart/CartMain';
 import {
   SEARCH_ENDPOINT,
   SearchFormPredictive,
-} from '~/components/SearchFormPredictive';
-import {SearchResultsPredictive} from '~/components/SearchResultsPredictive';
+} from './Search/SearchFormPredictive';
+import {SearchResultsPredictive} from './Search/SearchResultsPredictive';
 
 /**
  * @param {PageLayoutProps}
