@@ -11,9 +11,10 @@ import {
 } from 'react-router';
 import favicon from '~/assets/favicon.svg';
 import {FOOTER_QUERY, HEADER_QUERY} from '~/lib/fragments';
+import {PageLayout} from './components/PageLayout';
 import resetStyles from '~/styles/reset.css?url';
 import appStyles from '~/styles/app.css?url';
-import {PageLayout} from './components/PageLayout';
+import headerStyles from '~/styles/header.css?url';
 
 /**
  * This is important to avoid re-fetching root queries on sub-navigations
@@ -46,6 +47,10 @@ export const shouldRevalidate = ({formMethod, currentUrl, nextUrl}) => {
  */
 export function links() {
   return [
+    {rel: 'stylesheet', href: resetStyles},
+    {rel: 'stylesheet', href: appStyles},
+    {rel: 'stylesheet', href: headerStyles},
+
     {
       rel: 'preconnect',
       href: 'https://cdn.shopify.com',
@@ -152,8 +157,6 @@ export function Layout({children}) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <link rel="stylesheet" href={resetStyles}></link>
-        <link rel="stylesheet" href={appStyles}></link>
         <Meta />
         <Links />
       </head>

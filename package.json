@@ -5,11 +5,13 @@
   "version": "2025.5.1",
   "type": "module",
   "scripts": {
-    "build": "shopify hydrogen build --codegen",
     "dev": "shopify hydrogen dev --codegen",
+    "build": "shopify hydrogen build --codegen",
     "preview": "shopify hydrogen preview --build",
     "lint": "eslint --no-error-on-unmatched-pattern .",
-    "codegen": "shopify hydrogen codegen"
+    "codegen": "shopify hydrogen codegen",
+    "sass:build": "sass app/components/Header/header.scss app/styles/header.css",
+    "sass:watch": "sass --watch app/components/Header/header.scss:app/styles/header.css"
   },
   "prettier": "@shopify/prettier-config",
   "dependencies": {
@@ -52,6 +54,7 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "globals": "^15.14.0",
     "prettier": "^3.4.2",
+    "sass": "^1.89.2",
     "typescript": "^5.2.2",
     "vite": "^6.2.4",
     "vite-tsconfig-paths": "^4.3.1"
