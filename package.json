@@ -11,7 +11,8 @@
     "lint": "eslint --no-error-on-unmatched-pattern .",
     "codegen": "shopify hydrogen codegen",
     "sass:build": "sass app/components/Header/header.scss app/styles/header.css",
-    "sass:watch": "sass --watch app/components/Header/header.scss:app/styles/header.css"
+    "sass:watch": "sass --watch app/components/Header/header.scss:app/styles/header.css",
+    "dev:all": "concurrently \"npm run dev\" \"npm run sass:watch\""
   },
   "prettier": "@shopify/prettier-config",
   "dependencies": {
@@ -43,6 +44,7 @@
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^8.21.0",
     "@typescript-eslint/parser": "^8.21.0",
+    "concurrently": "^9.2.0",
     "eslint": "^9.18.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-import-resolver-typescript": "^3.7.0",
